@@ -16,7 +16,7 @@ class Logger extends AbstractLogger
      * @param $message
      * @param array $context
      */
-    public function log($level, Stringable|string $message, array $context = []): void
+    public function log($level, \Stringable|string $message, array $context = []): void
     {
         echo date("Y-m-d H:i:s") . " " . str_pad($level, 10, " ") . " " . $message . "\n";
     }
